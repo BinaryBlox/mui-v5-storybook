@@ -18,8 +18,7 @@ const theme = createTheme({
 
 const ThemeProviderMine = () => (
   <ThemeProvider theme={theme}>
-    <span>xxx</span>
-    <StyledTextField placeholder="Foobar" />
+    <StyledTextField placeholder="Foobar" label={"Select a foobar"} />
   </ThemeProvider>
 );
 
