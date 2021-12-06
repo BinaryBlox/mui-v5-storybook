@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@mui/lab": "5.0.0-alpha.59",
+    "@mui/material": "5.2.2",
+    "@mui/styles": "^5.2.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -10,10 +13,12 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
-    "typescript": "~3.7.2"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.1",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "styled-components": "^5.2.3",
+    "typescript": "4.5.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -39,8 +44,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
-    "@storybook/addon-docs": "6.0.0-beta.25",
-    "@storybook/react": "6.0.0-beta.25",
+    "@storybook/addon-docs": "6.3.12",
+    "@storybook/react": "6.3.12",
     "babel-loader": "^8.1.0"
   }
 }
