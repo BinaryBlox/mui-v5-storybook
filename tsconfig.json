@@ -1,25 +1,79 @@
 {
-  "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
+  "compilerOptions": {  
+    "baseUrl": ".",  
+    "target": "es6", 
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": false,  
+    "declaration": true,
+    "declarationDir": "build",
     "module": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "node", 
+    "sourceMap": false,  
+    "jsx": "react", 
+    "skipLibCheck": true,
+    "esModuleInterop": true, 
     "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react"
+    "isolatedModules": true, 
+    "noEmit": true, 
+    "noImplicitAny": false, 
+    "noImplicitThis": true, 
+    "strict": true, 
+    "strictNullChecks": false,
+    "strictBindCallApply": false,
+    "allowUnreachableCode": false,
+    "allowSyntheticDefaultImports": true, 
+    "forceConsistentCasingInFileNames": true, 
+    "noFallthroughCasesInSwitch": true,
+    "useUnknownInCatchVariables": false
   },
-  "include": [
-    "src"
+  "include": ["src/**/*", "src/react-app-env.d.ts", "src/react-table-config.d.ts"],
+  "exclude": [
+    "node_modules",
+    "build",
+    "storybook-static",
+    "src/mock/data/TileData.ts",
+    "src/**/*.stories.tsx",
+    "src/**/*.test.tsx",
+    "src/__fake-api__/**/*.ts",
+    "src/__fake-api__/**/*.tsx",
+    "src/utils/createEmotionCache.ts"
   ]
 }
+
+/**
+Future Reference: Looks to be the kitchin sink of ts configuration
+**/
+// {
+//   "compilerOptions": {
+//     "target": "es5",
+//     "outDir": "build/main",
+//     "rootDir": "src",
+//     "moduleResolution": "node",
+//     "module": "commonjs",
+//     "declaration": true,
+//     "inlineSourceMap": true,
+//     "esModuleInterop": true,
+//     "skipLibCheck": false,
+//     "strict": true,
+//     "noImplicitAny": true,
+//     "strictNullChecks": true,
+//     "strictFunctionTypes": true,
+//     "strictPropertyInitialization": true,
+//     "noImplicitThis": true,
+//     "alwaysStrict": true,
+//     "noUnusedLocals": false,
+//     "noUnusedParameters": true,
+//     "noImplicitReturns": true,
+//     "noFallthroughCasesInSwitch": true,
+//     "forceConsistentCasingInFileNames": true,
+//     "isolatedModules": true,
+//     "traceResolution": false,
+//     "listEmittedFiles": false,
+//     "listFiles": false,
+//     "pretty": true,
+//     "jsx": "preserve",
+//     "lib": ["dom", "dom.iterable", "esnext"],
+//     "types": ["node", "jest"],
+//     "typeRoots": ["node_modules/@types", "src/types"],
+//     "baseUrl": "."
+//   },
